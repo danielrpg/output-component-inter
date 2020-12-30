@@ -17,10 +17,10 @@ export class SubjectComponent implements OnInit {
         console.log(event);
         const index = this.subjects.findIndex(subject => subject.code == event.code);
         //TODO: improve this logic
-        if(event.code.rate != 0) {
+        if(event.rate != 0) {
            this.subjects[index].rate += event.rate 
         } else {
-           this.subjects[index].rate -= event.rate
+           this.subjects[index].rate -= 100
         } 
     }
 }
