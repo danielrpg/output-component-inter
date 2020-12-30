@@ -1,0 +1,13 @@
+<section id="tasks">
+    <h2> Tasks </h2>
+    <div *ngFor="let todo of todos">
+        <input 
+            type="checkbox"
+            (change)="onCheck($event)"
+            value={{todo.code}}
+            />
+        {{todo.description}}
+    </div>
+    <app-report [completed]="taskCompleted">
+    </app-report>
+</section>

@@ -120,5 +120,8 @@
       }
     }
   },
-  "defaultProject": "output-component"
+  "defaultProject": "output-component",
+  "cli": {
+    "analytics": false
+  }
 }

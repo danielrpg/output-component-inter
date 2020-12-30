@@ -1,0 +1,12 @@
+<h1> Output Emitter</h1>
+
+<section id="subjects">
+    <h2> Subjects</h2>
+    <div *ngFor="let subject of subjects">
+        <div> {{subject.description}} - Rate: {{subject.rate}}</div>
+    </div>
+    
+    <app-task
+        (subjectCompleteEvent)="receiveSubjectCompletion($event)">
+    </app-task>
+</section>
